@@ -9,7 +9,7 @@ class all
 public static void main(String args[])throws IOException
 {
 BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-long a,b,c,d,n,y,x,f,j,s,z,i,a2,b2,c2,i2;
+long a,b,c,d,n,m,o,y,x,f,j,s,z,i,a2,b2,c2,i2;
 int ch;
 System.out.println("\n\tOPTION MENU \n");
 System.out.println("1)  Check Palindrome");
@@ -156,6 +156,30 @@ for(a2=a2;a2%i2==0;a2=a2/i2)
 {
 System.out.println(i2);
 }
+}
+break;
+    
+case 9:
+c=0;
+System.out.println("Input three no.");
+n=Long.parseLong(br.readLine());
+m=Long.parseLong(br.readLine());
+o=Long.parseLong(br.readLine());
+System.out.println("\nOUTPUT:");
+for(i=2;i<=(n>o?n:o);i++)
+{
+if(n%i==0&&m%i==0&&o%i==0)
+{
+c++;
+}
+}
+if(c==0)
+{
+System.out.println("Triprime Numbers!!");
+}
+else
+{
+System.out.println("Not Triprime Numbers");
 }
 break;
 default:
